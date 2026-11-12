@@ -1,41 +1,476 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Oleksii Narizhnyi – CV</title>
-<style>
-body { font-family: Arial, sans-serif; background:#f8f9fa; color:#333; margin:40px; }
-h1 { color:#0077cc; }
-section { margin-bottom:25px; }
-ul { list-style-type:square; }
-.container { max-width:700px; margin:auto; background:#fff; padding:30px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-</style>
-</head>
-<body>
-<div class="container">
-<h1>Oleksii Narizhnyi</h1>
-<p><b>Contact:</b> lexyhsgame@gmail.com</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="author" content="Alex Narizhnyi" />
+    <meta name="description" content="Alex Narizhnyi CV page" />
+    <meta name="theme-color" content="#101326" />
+    <title>My CV</title>
 
-<section>
-<h2>Summary</h2>
-<p>Computer science student interested in AI-assisted programming and creative software projects.</p>
-</section>
+    <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml" />
 
-<section>
-<h2>Skills</h2>
-<ul>
-<li>Python</li><li>HTML/CSS</li><li>Pygame</li><li>Problem-Solving</li><li>Git</li><li>Teamwork</li>
-</ul>
-</section>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<section>
-<h2>Highlights</h2>
-<ul>
-<li>Developed a small Pygame project with AI co-authoring.</li><li>Built and deployed personal CV page using Python scripting.</li><li>Learning automation and data analysis techniques.</li>
-</ul>
-</section>
-<p style='text-align:center; font-size:0.9em;'>Generated automatically by Python script with AI assistance.</p>
-</div>
-</body>
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+
+    <!--
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  --></head>
+
+  <body class="index-page">
+    <header
+      id="header"
+      class="header d-flex flex-column justify-content-center"
+    >
+      <i
+        class="header-toggle d-xl-none bi bi-list"
+        aria-label="Toggle navigation"
+      ></i>
+
+      <nav id="navmenu" class="navmenu" aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon" aria-hidden="true"></i
+              ><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="bi bi-person navicon" aria-hidden="true"></i
+              ><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#skills"
+              ><i class="bi bi-lightning-charge navicon" aria-hidden="true"></i
+              ><span>Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#resume"
+              ><i class="bi bi-file-earmark-text navicon" aria-hidden="true"></i
+              ><span>Resume</span></a
+            >
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="bi bi-controller navicon" aria-hidden="true"></i
+              ><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/cheeselord8"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bi bi-github navicon" aria-hidden="true"></i
+              ><span>GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="hero" class="hero section">
+        <img
+          src="assets/img/hero-alex-narizhnyi.jpg"
+          alt="A creative team building game worlds and software at a studio workspace"
+        />
+        <div class="container" data-aos="zoom-out">
+          <div class="row justify-content-start">
+            <div class="col-lg-9">
+              <p class="hero-kicker">
+                Creative technology · Interactive systems · Applied AI
+              </p>
+              <h1>Alex Narizhnyi</h1>
+              <p class="hero-role">
+                App &amp; Game Developer <span aria-hidden="true">/</span> AI
+                Engineer
+              </p>
+              <p class="hero-summary">
+                I turn ideas into useful apps, playful worlds, and thoughtful AI
+                tools.
+              </p>
+              <div class="hero-actions">
+                <a class="btn hero-button" href="#projects"
+                  >Explore selected projects
+                  <i class="bi bi-arrow-down-right" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="hero-github"
+                  href="https://github.com/cheeselord8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Alex Narizhnyi on GitHub"
+                  ><i class="bi bi-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">A little about me</span>
+          <h2>About</h2>
+          <p>Building across applications, games, and intelligent systems.</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-10 content">
+              <h3>Curiosity is the start of every good build.</h3>
+              <p>
+                I enjoy taking a concept from a rough sketch to a working
+                experience. My interests sit at the intersection of app
+                development, game systems, and applied AI, where good
+                engineering can make ambitious ideas feel clear and enjoyable to
+                use.
+              </p>
+              <p>
+                I like small, iterative builds: make the core loop work, learn
+                from each prototype, and refine the details that make an
+                experience feel complete. Outside the code, I follow game
+                design, digital art, and the ways people interact with new
+                technology.
+              </p>
+
+              <div class="profile-facts row gy-3">
+                <div class="col-md-4">
+                  <div class="fact-card">
+                    <i class="bi bi-phone" aria-hidden="true"></i>
+                    <div>
+                      <span>App development</span
+                      ><strong>Useful, focused tools</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fact-card">
+                    <i class="bi bi-controller" aria-hidden="true"></i>
+                    <div>
+                      <span>Game development</span
+                      ><strong>Systems with a sense of play</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fact-card">
+                    <i class="bi bi-cpu" aria-hidden="true"></i>
+                    <div>
+                      <span>Applied AI</span
+                      ><strong>Helpful, human-centered features</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">What I work with</span>
+          <h2>Skills</h2>
+          <p>
+            A practical toolkit for shaping ideas into reliable, interactive
+            software.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+              <article class="skill-card h-100">
+                <div class="skill-card-icon">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                </div>
+                <h3>Application development</h3>
+                <p>Clear interfaces and dependable app foundations.</p>
+                <ul class="skill-tags">
+                  <li>Python</li>
+                  <li>TypeScript</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>HTML &amp; CSS</li>
+                  <li>REST APIs</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="skill-card h-100">
+                <div class="skill-card-icon">
+                  <i class="bi bi-controller" aria-hidden="true"></i>
+                </div>
+                <h3>Game development</h3>
+                <p>
+                  Interactive mechanics, game loops, and playable prototypes.
+                </p>
+                <ul class="skill-tags">
+                  <li>C#</li>
+                  <li>Unity</li>
+                  <li>Godot</li>
+                  <li>Gameplay systems</li>
+                  <li>Prototyping</li>
+                  <li>Git</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="skill-card h-100">
+                <div class="skill-card-icon">
+                  <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                </div>
+                <h3>AI &amp; intelligent tools</h3>
+                <p>Useful model integrations grounded in real tasks.</p>
+                <ul class="skill-tags">
+                  <li>LLM integration</li>
+                  <li>Prompt design</li>
+                  <li>Retrieval workflows</li>
+                  <li>FastAPI</li>
+                  <li>Data handling</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume section">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">Learning by building</span>
+          <h2>Resume</h2>
+          <p>
+            A developing foundation shaped by study and hands-on project work.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>BSc in Software Engineering</h4>
+                <h5>2024 – 2028</h5>
+                <p><em>Vilnius Tech · In progress</em></p>
+                <p>
+                  Developing a foundation in programming, algorithms, software
+                  design, and collaborative project work.
+                </p>
+              </div>
+
+              <h3 class="resume-title">Areas of interest</h3>
+              <div class="resume-item">
+                <h4>Interactive software &amp; applied AI</h4>
+                <p>
+                  Exploring how game systems, accessible applications, and AI
+                  features can make digital experiences more engaging and
+                  useful.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Independent project work</h3>
+              <div class="resume-item">
+                <h4>App &amp; Game Developer</h4>
+                <h5>2024 – Present</h5>
+                <p><em>Personal and coursework prototypes</em></p>
+                <ul>
+                  <li>
+                    Builds small applications from user need through interface,
+                    implementation, and iteration.
+                  </li>
+                  <li>
+                    Prototypes game mechanics and reusable gameplay systems in
+                    Unity and Godot.
+                  </li>
+                  <li>
+                    Experiments with AI features that help people organize,
+                    explore, and understand information.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Current direction</h4>
+                <p>
+                  Growing toward cross-disciplinary roles that combine product
+                  thinking, interactive development, and practical machine
+                  learning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">Selected builds</span>
+          <h2>Projects</h2>
+          <p>
+            Concept projects that bring together code, interaction, and creative
+            problem-solving.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <article class="project-card h-100">
+                <div class="project-topline">
+                  <span>01</span
+                  ><i class="bi bi-controller" aria-hidden="true"></i>
+                </div>
+                <p class="project-type">Game prototype</p>
+                <h3>Echoes of Meridian</h3>
+                <p>
+                  A compact third-person adventure prototype focused on readable
+                  combat, exploration, and a world that rewards curiosity.
+                </p>
+                <ul class="project-tags">
+                  <li>Unity</li>
+                  <li>C#</li>
+                  <li>Gameplay systems</li>
+                </ul>
+              </article>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <article class="project-card h-100">
+                <div class="project-topline">
+                  <span>02</span
+                  ><i class="bi bi-grid-1x2" aria-hidden="true"></i>
+                </div>
+                <p class="project-type">Productivity app</p>
+                <h3>LoopNote</h3>
+                <p>
+                  A lightweight study and project planner that turns a long task
+                  list into small, clear next steps.
+                </p>
+                <ul class="project-tags">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Local-first</li>
+                </ul>
+              </article>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <article class="project-card h-100">
+                <div class="project-topline">
+                  <span>03</span><i class="bi bi-stars" aria-hidden="true"></i>
+                </div>
+                <p class="project-type">AI learning tool</p>
+                <h3>ContextKit</h3>
+                <p>
+                  A document companion concept that retrieves relevant notes
+                  before generating concise, source-aware answers.
+                </p>
+                <ul class="project-tags">
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>Retrieval</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative">
+      <div class="container">
+        <h3 class="sitename">Alex Narizhnyi</h3>
+        <p>Building apps, game experiences, and thoughtful AI tools.</p>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://github.com/cheeselord8"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            ><i class="bi bi-github" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <span>© 2026</span>
+            <strong class="px-1 sitename">Alex Narizhnyi</strong>
+            <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            <span class="practice-note"
+              >Practice CV concept; education and project details are
+              fictional.</span
+            ><br />
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> |
+            <a href="https://bootstrapmade.com/tools/">DevTools</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      aria-label="Scroll to top"
+      ><i class="bi bi-arrow-up-short" aria-hidden="true"></i
+    ></a>
+    <div id="preloader"></div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

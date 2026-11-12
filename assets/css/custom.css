@@ -1,0 +1,348 @@
+:root {
+  --accent-color: #6d5dfc;
+  --nav-hover-color: #6d5dfc;
+}
+
+.hero {
+  min-height: 100vh;
+  justify-content: flex-start;
+  color: #fff;
+  background: #101326;
+}
+
+.hero img {
+  object-position: center 58%;
+}
+
+.hero:before {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 12, 27, 0.9) 0%,
+    rgba(9, 12, 27, 0.73) 44%,
+    rgba(9, 12, 27, 0.28) 100%
+  );
+}
+
+.hero .container {
+  width: 100%;
+}
+
+.hero .hero-kicker {
+  margin: 0 0 18px;
+  color: #d6d4ff;
+  font-family: var(--nav-font);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.hero .hero-role {
+  margin: 18px 0 0;
+  color: #fff;
+  font-size: clamp(1.15rem, 2.7vw, 1.8rem);
+  font-weight: 500;
+}
+
+.hero .hero-role span {
+  border: 0;
+  color: #a9a2ff;
+  padding: 0 0.12em;
+}
+
+.hero .hero-summary {
+  max-width: 45rem;
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.hero-button {
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.hero-button:hover {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.hero-button i {
+  margin-left: 8px;
+}
+
+.hero-github {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.6rem;
+  transition: 0.2s ease;
+}
+
+.hero-github:hover {
+  color: #bcb6ff;
+  transform: translateY(-2px);
+}
+
+.section-title .section-eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--accent-color);
+  font-family: var(--nav-font);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.about .content {
+  max-width: 960px;
+}
+
+.about .content h3 {
+  margin-bottom: 18px;
+  color: var(--heading-color);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+}
+
+.about .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 17%);
+  line-height: 1.8;
+}
+
+.profile-facts {
+  margin-top: 28px;
+}
+
+.fact-card {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  gap: 14px;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 86%);
+  border-radius: 12px;
+  padding: 18px;
+  background: var(--surface-color);
+}
+
+.fact-card > i {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.fact-card span,
+.fact-card strong {
+  display: block;
+}
+
+.fact-card span {
+  margin-bottom: 4px;
+  color: #778092;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.fact-card strong {
+  color: var(--heading-color);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.skill-card,
+.project-card {
+  border: 1px solid rgba(41, 49, 80, 0.08);
+  border-radius: 18px;
+  padding: 28px;
+  background: var(--surface-color);
+  box-shadow: 0 12px 36px rgba(21, 27, 52, 0.045);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  box-shadow: 0 18px 48px rgba(21, 27, 52, 0.11);
+  transform: translateY(-5px);
+}
+
+.skill-card-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  place-items: center;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  font-size: 1.35rem;
+}
+
+.skill-card h3,
+.project-card h3 {
+  margin-bottom: 10px;
+  color: var(--heading-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.skill-card p,
+.project-card p {
+  color: color-mix(in srgb, var(--default-color), transparent 24%);
+  line-height: 1.65;
+}
+
+.skill-tags,
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.skill-tags li,
+.project-tags li {
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: #5147bd;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.resume .resume-title {
+  color: var(--heading-color);
+}
+
+.resume .resume-item h4 {
+  color: var(--heading-color);
+}
+
+.resume .resume-item h5 {
+  background: color-mix(in srgb, var(--accent-color), transparent 91%);
+  color: #5147bd;
+}
+
+.resume .resume-item ul li::before {
+  border-color: var(--accent-color);
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.project-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: var(--accent-color);
+}
+
+.project-topline span {
+  font-family: var(--heading-font);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.project-topline i {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--accent-color), transparent 91%);
+  font-size: 1.35rem;
+}
+
+.project-card .project-type {
+  margin-bottom: 7px;
+  color: #6d5dfc;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.project-card .project-tags {
+  margin-top: 22px;
+}
+
+.footer .practice-note {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero:before {
+    background: linear-gradient(
+      90deg,
+      rgba(9, 12, 27, 0.86),
+      rgba(9, 12, 27, 0.58)
+    );
+  }
+
+  .hero .hero-kicker {
+    max-width: 26rem;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero .hero-summary {
+    font-size: 1rem;
+  }
+
+  .skill-card,
+  .project-card {
+    padding: 24px;
+  }
+}
