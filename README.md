@@ -15,7 +15,7 @@ The page is built with HTML, CSS, JavaScript, and the template's local Bootstrap
 - The resume includes fictional education and project experience for coursework practice.
 - The portfolio shows four SVG graphs recreated from the supplied MATLAB Lab Work 3 and 4 formulas/data.
 - The Services section includes the required 4-by-3 HTML table, technology list, ordered workflow, and nested list.
-- The Media Lab embeds the local Pexels MP4 and Pixabay MP3 files, plus the assigned YouTube video.
+- The Media Lab embeds the local Pexels MP4 and Pixabay MP3 files, plus a tested YouTube game-development video. The original video ID from LW8 is linked in the page because YouTube currently reports it as unavailable.
 
 ## Media credits
 
