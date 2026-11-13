@@ -1,4 +1,4 @@
-# Alex Narizhnyi — CV Website
+# Alex Narizhnyi - CV Website
 
 A static one-page CV site based on the supplied MyResume template. The profile and project details are fictional practice content for coursework. The public site is served from `https://cheeselord8.github.io/`.
 
