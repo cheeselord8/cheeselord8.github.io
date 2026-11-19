@@ -512,3 +512,306 @@
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   color: var(--accent-color);
 }
+
+/* LW9 typography: use a rounder font and a clearer heading hierarchy. */
+:root {
+  --default-font: "Poppins", system-ui, sans-serif;
+  --heading-font: "Poppins", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--default-font);
+  letter-spacing: 0.005em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 0.015em;
+}
+
+.section-title h2 {
+  color: #30384f;
+  letter-spacing: -0.04em;
+}
+
+p {
+  color: #586174;
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+/* LW9 controls: give buttons and content links clear interaction states. */
+.main .btn {
+  border-radius: 12px;
+  padding: 0.72rem 1.15rem;
+  font-weight: 700;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.main .btn:hover {
+  box-shadow: 0 10px 24px rgba(53, 47, 138, 0.2);
+  transform: translateY(-2px);
+}
+
+.main .btn:active {
+  box-shadow: 0 3px 8px rgba(53, 47, 138, 0.16);
+  transform: translateY(1px);
+}
+
+.main a:not(.btn):not(.hero-github):not(.media-download) {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent-color), transparent 45%);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+.main a:not(.btn):not(.hero-github):not(.media-download):hover,
+.main a:not(.btn):not(.hero-github):not(.media-download):focus-visible {
+  color: #5147bd;
+  text-decoration-thickness: 2px;
+}
+
+/* LW9 layout: add measured space and card framing to About, Resume, and Portfolio. */
+.about .content {
+  margin-inline: auto;
+  padding: clamp(1.35rem, 3vw, 2.3rem);
+  border: 1px solid rgba(69, 80, 91, 0.1);
+  border-radius: 24px;
+  background: linear-gradient(145deg, #fff, #f8f7ff);
+  box-shadow: 0 18px 46px rgba(32, 40, 72, 0.08);
+}
+
+.about .content h3 {
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.035em;
+}
+
+.about .content > p {
+  max-width: 70ch;
+  margin-bottom: 1.05rem;
+}
+
+.about .profile-facts {
+  margin-top: 2rem;
+}
+
+.resume .row {
+  row-gap: 1.1rem;
+}
+
+.resume .resume-title {
+  margin-bottom: 1.35rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 74%);
+  letter-spacing: -0.03em;
+}
+
+.resume .resume-item {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding: 1.1rem 1.2rem 0.7rem 1.4rem;
+  border: 1px solid rgba(69, 80, 91, 0.12);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 16px 16px 0;
+  background: var(--surface-color);
+  box-shadow: 0 10px 28px rgba(32, 40, 72, 0.06);
+}
+
+.resume .resume-item::before {
+  left: -10px;
+  background: var(--accent-color);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 82%);
+}
+
+.projects .row {
+  row-gap: 1.25rem;
+}
+
+.projects .project-card {
+  margin-block: 0.35rem;
+  padding: clamp(1.35rem, 2.5vw, 2rem);
+  border-top: 4px solid color-mix(in srgb, var(--accent-color), transparent 14%);
+  border-radius: 22px;
+  box-shadow: 0 16px 40px rgba(32, 40, 72, 0.075);
+}
+
+/* LW9 component redesign 1 of 2: the icon navigation rail. */
+.navmenu a,
+.navmenu a:focus {
+  height: 52px;
+  margin-bottom: 11px;
+  border: 1px solid rgba(109, 93, 252, 0.16);
+  border-radius: 15px;
+  background: #f3f1ff;
+  box-shadow: 0 5px 14px rgba(39, 45, 82, 0.07);
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover > a {
+  border-color: var(--accent-color);
+  border-radius: 15px;
+  background: linear-gradient(135deg, #6d5dfc, #5948df);
+  box-shadow: 0 8px 20px rgba(78, 65, 202, 0.27);
+  color: #fff;
+  transform: translateX(2px);
+}
+
+/* LW9 component redesign 2 of 2: make the back-to-top control a raised tile. */
+.scroll-top {
+  width: 52px;
+  height: 52px;
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  border-radius: 15px;
+  background: linear-gradient(145deg, #7a6cff, #5948df);
+  box-shadow: 0 10px 24px rgba(57, 48, 150, 0.3);
+}
+
+.scroll-top:hover {
+  background: linear-gradient(145deg, #897cff, #4e3dcc);
+  box-shadow: 0 14px 28px rgba(57, 48, 150, 0.36);
+  transform: translateY(-3px) rotate(-3deg);
+}
+
+.scroll-top:active {
+  transform: translateY(1px);
+}
+
+/* LW9 complementary task: custom ordered, unordered, and nested lists. */
+.service-tool-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.service-tool-list li {
+  position: relative;
+  margin-bottom: 0.65rem;
+  padding: 0.25rem 0 0.25rem 1.65rem;
+}
+
+.service-tool-list li::before {
+  position: absolute;
+  top: 0.82rem;
+  left: 0.15rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--accent-color), white 78%);
+  content: "";
+}
+
+.service-process > ol {
+  margin: 0;
+  padding: 0;
+  counter-reset: service-step;
+  list-style: none;
+}
+
+.service-process > ol > li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding: 0.85rem 0.9rem 0.85rem 3.1rem;
+  border: 1px solid rgba(109, 93, 252, 0.14);
+  border-radius: 13px;
+  background: #fbfaff;
+  counter-increment: service-step;
+}
+
+.service-process > ol > li::before {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.75rem;
+  display: grid;
+  width: 1.8rem;
+  height: 1.8rem;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--accent-color);
+  color: #fff;
+  content: counter(service-step, decimal-leading-zero);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.service-process ol > li > ul {
+  margin: 0.75rem 0 0.2rem;
+  padding: 0.45rem 0 0.2rem 0.75rem;
+  border-top: 1px dashed color-mix(in srgb, var(--accent-color), transparent 62%);
+  list-style: none;
+}
+
+.service-process ol > li > ul li {
+  position: relative;
+  margin-bottom: 0.3rem;
+  padding-left: 1.25rem;
+}
+
+.service-process ol > li > ul li::before {
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  content: "↳";
+  font-weight: 700;
+}
+
+/* LW9 complementary task: centered table cells, a clear heading row, and zebra/hover states. */
+.service-table {
+  --bs-table-hover-bg: #eceaff;
+  --bs-table-hover-color: #30384f;
+}
+
+.service-table th,
+.service-table td {
+  padding: 15px 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.service-table thead th {
+  --bs-table-bg-type: #eae8ff;
+  --bs-table-color-type: #302657;
+  border-bottom: 3px solid var(--accent-color);
+  background: #eae8ff;
+  color: #302657;
+  font-weight: 700;
+}
+
+.service-table tbody tr:nth-child(even) > * {
+  --bs-table-bg-type: #f6f5ff;
+}
+
+.service-table tbody tr:hover > * {
+  --bs-table-bg-state: #eceaff;
+}
+
